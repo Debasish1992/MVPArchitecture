@@ -7,6 +7,11 @@ public class User implements IUser {
 
     String email, password;
 
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
     @Override
     public String getEmail() {
         return email;
@@ -16,6 +21,8 @@ public class User implements IUser {
     public String getPassword() {
         return password;
     }
+
+
 
     @Override
     public int isValidated() {
